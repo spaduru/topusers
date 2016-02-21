@@ -11,7 +11,10 @@ public class TopUsersRunner {
 		    String line;
 		    Integer topK = 3;
 		    TopUsers topusers = new TopUsers(topK);
-		    String file = "/Users/sharathpaduru/codes/problems/src/problems/input.txt";
+		    br = new BufferedReader(new InputStreamReader(System.in));
+		    System.out.println("Enter file path");
+		    
+		    String file = br.readLine();
 
 		    try {
 		        br = new BufferedReader(
